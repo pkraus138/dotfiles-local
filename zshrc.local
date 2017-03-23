@@ -1,0 +1,61 @@
+export PATH="$HOME/.bin:$PATH"
+export EDITOR="/usr/local/bin/nvim"
+export MYLOCALVIMRC="$HOME/dotfiles-local/vimrc.local"
+eval "$(rbenv init -)"
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+eval "$(hub alias -s)"
+PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH:$PATH"
+CASE_SENSITIVE="false"
+
+# Setup git branch in prompt
+function git_prompt_info {
+local ref=$(=git symbolic-ref HEAD 2> /dev/null)
+local gitst="$(=git status 2> /dev/null)"
+
+if [[ -f .git/MERGE_HEAD ]]; then
+  if [[ ${gitst} =~ "unmerged" ]]; then
+    gitstatus=" %{$fg[red]%}unmerged%{$reset_color%}"
+  else
+    gitstatus=" %{$fg[green]%}merged%{$reset_color%}"
+  fi
+elif [[ ${gitst} =~ "Changes to be committed" ]]; then
+  gitstatus=" %{$fg[blue]%}!%{$reset_color%}"
+elif [[ ${gitst} =~ "use \"git add" ]]; then
+  gitstatus=" %{$fg[red]%}!%{$reset_color%}"
+elif [[ -n `git checkout HEAD 2> /dev/null | grep ahead` ]]; then
+  gitstatus=" %{$fg[cyan]%}* %{$reset_color%}"
+else
+  gitstatus=''
+fi
+
+if [[ -n $ref ]]; then
+  echo "%{$fg_bold[orange]%} ${ref#refs/heads/}%{$reset_color%}$gitstatus"
+fi
+}
+
+precmd () { PS1="%{%F{4}%}%~%{%F{010}%}$(git_prompt_info) %{%f%}% 🍕  "; }
+
+gply () {
+  if [ "$1" != "" ] # or better, if [ -n "$1" ]
+  then
+    git stash apply stash@{$1}
+  else
+    git stash apply
+  fi
+}
+
+gpop () {
+  if [ "$1" != "" ] # or better, if [ -n "$1" ]
+  then
+    git stash pop stash@{$1}
+  else
+    git stash pop
+  fi
+}
+
+autoload -U compinit
+compinit
+setopt completeinword
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'

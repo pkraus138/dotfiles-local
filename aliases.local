@@ -1,0 +1,20 @@
+# aliases
+
+alias c='clear'
+alias d='cd ~/dotfiles'
+alias dl='cd ~/dotfiles-local'
+
+alias audit="bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias be="bundle exec"
+alias co="checkout"
+alias hosts="sudo nano /private/etc/hosts"
+alias hiddenshow="defaults write com.apple.finder AppleShowAllFiles YES"
+alias hiddenhide="defaults write com.apple.finder AppleShowAllFiles NO"
+alias ll="ls -lahG"
+alias m="bundle exec rake db:migrate db:test:prepare"
+alias profile="pico ~/.zshrc"
+alias rake="bundle exec rake"
+alias reload!="source ~/.zshrc"
+alias rspec="bundle exec rspec"
+alias t="bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias weather="curl -4 wttr.in/clearwater"

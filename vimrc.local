@@ -1,0 +1,28 @@
+" ================ Search ===========================
+
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
+
+" ================ Indentation ======================
+
+set autoindent
+set smartindent
+set smarttab
+" set softtabstop=2
+
+" ================ Colorscheme ======================
+
+colorscheme base16-default-dark
+
+" ================ Key Bindings ======================
+
+map <C-n> :NERDTreeToggle<CR>   " Toggle NERDTree
+vnoremap <C-c> "*y"             " ctrl+c to sys clipboard
+
+" Tab completion for Emmett
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+" ========== Syntax for Odd Filetypes ===================
+
+au BufNewFile,BufRead *.kit setf html   " .kit = html
