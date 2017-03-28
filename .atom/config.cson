@@ -1,0 +1,48 @@
+"*":
+  core:
+    disabledPackages: [
+      "jshint"
+      "language-aspx"
+      "language-javascript-jsx"
+      "language-javascript"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "base16-darker-high-contrast-syntax"
+    ]
+  editor:
+    fontSize: 15
+    invisibles: {}
+    softWrap: true
+  emmet: {}
+  "exception-reporting":
+    userId: "f6173414-1c4c-fefc-8010-ad061fcf748c"
+  "file-icons":
+    onChanges: true
+  "fuzzy-finder":
+    ignoredNames: [
+      ".scssc"
+    ]
+    preserveLastSearch: true
+  "git-diff": {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    useGlobalEslint: true
+  "linter-ruby":
+    ignoredExtensions: [
+      "erb"
+      "md"
+      "haml"
+    ]
+  "sync-settings":
+    _lastBackupHash: "00296161e7bbc90f25ccc87292182bcf93f15882"
+    gistDescription: "Sync Settings, foo!"
+    gistId: "cd4305d29efa6b167d39f976df3d6d44"
+    personalAccessToken: "6c581e9a865136df111ceb3f21e4d5a822c958e7"
+  tabs:
+    usePreviewTabs: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

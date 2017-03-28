@@ -1,0 +1,58 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+ @font-size: 10px;
+
+ html, body, .tree-view, .tab-bar .tab, .status-bar {
+   font-size: @font-size;
+ }
+
+.tree-view { }
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor { }
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor { }
+
+.tab-bar {
+  height: 34px;
+  padding: 0;
+
+  .tab {
+    -webkit-transform: none;
+    top: 2px;
+    line-height: 34px;
+
+    &.active {
+      height: 34px;
+
+      &:before {
+        height: 34px;
+      }
+    }
+
+    &:before {
+      -webkit-transform: none;
+      width: 18px;
+    }
+
+    .close-icon {
+      -webkit-transform: none;
+      line-height: 34px;
+    }
+
+    .title {
+      -webkit-transform: none;
+    }
+  }
+}
