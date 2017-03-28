@@ -21,7 +21,10 @@ map <C-n> :NERDTreeToggle<CR>   " Toggle NERDTree
 vnoremap <C-c> "*y"             " ctrl+c to sys clipboard
 
 " Tab completion for Emmett
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+" Pastetoggle
+nnoremap <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 " ========== Syntax for Odd Filetypes ===================
 
