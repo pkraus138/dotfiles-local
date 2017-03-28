@@ -35,6 +35,7 @@
       "md"
       "haml"
     ]
+  "linter-ui-default": {}
   "sync-settings":
     _lastBackupHash: "00296161e7bbc90f25ccc87292182bcf93f15882"
     gistDescription: "Sync Settings, foo!"
