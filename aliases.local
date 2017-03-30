@@ -7,6 +7,7 @@ alias dl='cd ~/dotfiles-local'
 alias aliases="vim ~/.aliases.local"
 alias audit="bundle exec bundle-audit update && bundle exec bundle-audit check"
 alias be="bundle exec"
+alias cls="clear"
 alias co="checkout"
 alias hosts="sudo nano /private/etc/hosts"
 alias hiddenshow="defaults write com.apple.finder AppleShowAllFiles YES"
