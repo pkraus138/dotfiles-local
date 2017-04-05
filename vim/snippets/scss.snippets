@@ -1,0 +1,162 @@
+extends css
+
+snippet $
+	$${1:variable}: ${0:value};
+snippet imp
+	@import '${0}';
+snippet mix
+	@mixin ${1:name}(${2}) {
+		${0}
+	}
+snippet inc
+	@include ${1:mixin}(${2});
+snippet ext
+	@extend ${0};
+snippet fun
+	@function ${1:name}(${2:args}) {
+		${0}
+	}
+snippet if
+	@if ${1:condition} {
+		${0}
+	}
+snippet ife
+	@if ${1:condition} {
+		${2}
+	} @else {
+		${0}
+	}
+snippet eif
+	@else if ${1:condition} {
+		${0}
+	}
+snippet for
+	@for ${1:$i} from ${2:1} through ${3:3} {
+		${0}
+	}
+snippet each
+	@each ${1:$item} in ${2:items} {
+		${0}
+	}
+snippet while
+	@while ${1:$i} ${2:>} ${3:0} {
+		${0}
+	}
+snippet lot
+	&:last-of-type {
+		${0}
+	}
+snippet fot
+	&:first-of-type {
+		${0}
+	}
+snippet hov
+	&:hover {
+		${0}
+	}
+snippet foc
+	&:focus {
+		${0}
+	}
+# Bourbon.io snippets
+snippet import-bourbon-stack
+	@import "bourbon/bourbon";
+	@import "neat/neat";
+	@import "base/base";
+snippet nl
+	null
+snippet xm
+	@include margin(${1:null} ${2:null} ${3:null} ${4:null});
+snippet xp
+	@include padding(${1:null} ${2:null} ${3:null} ${4:null});
+snippet xpos
+	@include position(${1:relative}, ${2:null} ${3:null} ${4:null} ${4:null});
+snippet xsz
+	@include size(${1:width} ${2:height});
+snippet ati
+	#{$all-text-inputs} {
+		${1}
+	}
+snippet atif
+	#{$all-text-inputs-focus} {
+		${1}
+	}
+snippet atih
+	#{$all-text-inputs-hover} {
+		${1}
+	}
+snippet atifh
+	#{$all-text-inputs-focus},
+	#{$all-text-inputs-hover} {
+		${1}
+	}
+snippet atia
+	#{$all-text-inputs-active} {
+		${1}
+	}
+snippet ab
+	#{$all-buttons} {
+		${1}
+	}
+snippet abf
+	#{$all-buttons-focus} {
+		${1}
+	}
+snippet abh
+	#{$all-buttons-hover} {
+		${1}
+	}
+snippet abfh
+	#{$all-buttons-focus},
+	#{$all-buttons-hover} {
+		${1}
+	}
+snippet aba
+	#{$all-buttons-active} {
+		${1}
+	}
+snippet xww
+	@include word-wrap;
+snippet xcf
+	@include clearfix;
+snippet ximgrep
+	@include hide-text;
+	background-image: url(logo.png);
+snippet xlg
+	@include linear-gradient(${0});
+snippet xrg
+	@include radial-gradient(${0});
+snippet xfil
+	@include filter(${0});
+snippet xbg
+	@include background(${0});
+snippet xbgi
+	@include background-image(${0});
+snippet xts
+	@include transition(${0});
+# Neat snippets
+snippet xvg
+	$visual-grid: true;
+	$visual-grid-index: front;
+snippet xoc
+	@include outer-container;
+snippet xsc
+	@include span-columns(${0});
+snippet xsh
+	@include shift(${0});
+snippet xsic
+	@include shift-in-context(${0});
+snippet xfp
+	@include fill-parent;
+snippet xmd
+	@include media(${1}) {
+
+	}
+snippet xrow
+	@include row();
+snippet xms
+	font-size: modular-scale(${0});
+snippet desk
+	@include media($large-screen) {
+		${0}
+	}

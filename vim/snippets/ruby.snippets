@@ -1,0 +1,203 @@
+################################
+# Ruby
+################################
+snippet init
+	def initialize${0}
+	end
+snippet cl
+	class ${0}
+	end
+snippet hdoc
+	<<~${1}
+		${0}
+	$1
+snippet mod
+	module ${0}
+	end
+snippet rq
+	require "${1}"
+snippet rqr
+	require_relative "${1}"
+################################
+# Debugging
+################################
+snippet pdb
+	require 'pry'; binding.pry
+snippet roof
+	raise 'roof'
+snippet bb
+	byebug
+snippet db
+	Rails.logger.debug "#########DEBUG###########"
+	Rails.logger.debug "#########################"
+	Rails.logger.debug ${0}
+	Rails.logger.debug "#########################"
+	Rails.logger.debug "#########DEBUG###########"
+################################
+# Rspec
+################################
+snippet rrh
+	require 'rails_helper'
+
+snippet rql
+	:require_login
+snippet desc
+	describe '${1}' do
+		${0}
+	end
+snippet cont
+	context '${1}' do
+		${0:${VISUAL:}}
+	end
+snippet it
+	it '${1}' do
+		${0:${VISUAL:}}
+	end
+snippet exp
+	expect(${1}).to ${0}
+snippet ccb
+	expect{${0}}.to change{.count}.by
+snippet aed
+	around(:each) do
+		${0:${VISUAL:}}
+	end
+snippet aad
+	around(:all) do
+		${0:${VISUAL:}}
+	end
+snippet afed
+	after(:each) do
+		${0:${VISUAL:}}
+	end
+snippet afad
+	after(:all) do
+		${0:${VISUAL:}}
+	end
+snippet bed
+	before(:each) do
+		${0:${VISUAL:}}
+	end
+snippet bad
+	before(:all) do
+		${0:${VISUAL:}}
+	end
+snippet volt
+	HighVoltage.configure do |config|
+		config.home_page = 'home'
+	end
+################################
+# Capybara
+################################
+snippet sop
+	save_and_open_page
+snippet sos
+	save_and_open_screenshot("#{Time.now}.png", full: true)
+snippet co
+	click_on ${0}
+snippet vl
+	visit_link ${0}
+snippet fi
+	fill_in ${0}
+snippet feat
+	require 'rails_helper'
+
+	feature '${1}' do
+		${0}
+	end
+snippet scen
+	scenario '${1}' do
+		${0:${VISUAL:}}
+	end
+snippet phc
+	expect(page).to have_content(${0})
+snippet pnhc
+	expect(page).to_not have_content(${0})
+snippet hc
+	have_content(${0})
+snippet hl
+	have_link ${1}, href: ${0}
+snippet vcr
+	VCR.use_cassette '${1}' do
+		${0:${VISUAL:}}
+	end
+################################
+# RAILS
+################################
+################################
+# Models
+################################
+snippet bt
+	belongs_to ${0}
+snippet hm
+	has_many ${0}
+snippet dd
+	dependent: :destroy
+snippet cct
+	counter_cache: true
+snippet xact
+	ActiveRecord::Base.transaction do
+		${0}
+	end
+################################
+# Controllers
+################################
+snippet rd
+	redirect_to ${0}
+snippet rnd
+	render :${0}
+snippet bfa
+	before_action ${0}
+snippet bff
+	before_filter :${0}
+snippet seud
+	only: [:show, :edit, :update, :destroy]
+snippet only
+	only: [${0}]
+snippet auth
+	:authenticate_${1:model}!
+snippet res
+	resources :${0}
+snippet rp
+	root_path
+snippet deffind
+	def find_${1:model}
+		@${0:$1} = ${0:$1}.find(params[:id])
+	end
+snippet defprm
+	def ${1:model}_params
+		params.require(:${0:$1}).permit(:${2})
+	end
+snippet vpres
+	validates :${0:field}, presence: true
+snippet vnum
+	validates :${0:field}, numericality: { ${1} }
+snippet vlen
+	validates :${0:field}, length: { ${1} }
+################################
+# Shoulda matchers
+################################
+snippet svpo
+	it { should validate_presence_of(:${0}) }
+snippet svno
+	it { should validate_numericality_of(:${0}) }
+snippet svlo
+	it { should validate_length_of(:${0}) }
+snippet sbt
+	it { should belong_to(:${0}) }
+snippet shm
+	it { should have_many(:${0}) }
+snippet shmdd
+	it { should have_many(:${0}).dependent(:destroy) }
+snippet sdb
+	it { should have_db_column(:${1}).of_type(:${0}) }
+snippet svuo
+	it { should_validate_uniqueness_of(:${0}) }
+################################
+# JSONAPI
+################################
+snippet jc
+	JSONAPI::ResourceController
+snippet jar
+	jsonapi_resources :${0}
+snippet ho
+	has_one :${0}

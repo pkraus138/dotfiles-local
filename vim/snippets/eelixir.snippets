@@ -1,0 +1,22 @@
+extends html
+snippet pp
+	<% ${0} %>
+snippet pe
+	<%= ${0} %>
+snippet ped
+	<%= ${0} do %>
+	<% end %>
+snippet end
+	<% end %>
+snippet rnd
+	<%= render "${0}.html" %>
+snippet ff
+	<%= form_for @changeset, ${0}_path(@conn, :create), fn f -> %>
+		<%= text_input f, :field, placeholder: "fieldname" %>
+
+		<%= submit "Create" %>
+	<% end %>
+snippet if
+	<%= if ${0} do %>
+
+	<% end %>

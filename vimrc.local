@@ -1,5 +1,14 @@
+
+let g:mapleader = ','            " sets leader key to comma
+set autoread
+set cursorline                   " highlight the cursor line
+set mouse=a                      " enable the mouse in all modes
+set backspace=indent,eol,start   " Backspace deletes like usual
+syntax enable                    " enable syntax highlighting
+
 " ================ Search ===========================
 
+set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
@@ -10,67 +19,4 @@ set autoindent
 set smartindent
 set smarttab
 " set softtabstop=2
-
-" ================ Colorscheme ======================
-
-colorscheme base16-default-dark
-
-" ================ Key Bindings ======================
-
-map <C-n> :NERDTreeToggle<CR>   " Toggle NERDTree
-vnoremap <C-c> "*y"             " ctrl+c to sys clipboard
-
-" Tab completion for Emmett
-" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
-" Pastetoggle
-nnoremap <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
-
-" ========== Syntax for Odd Filetypes ===================
-
-au BufNewFile,BufRead *.kit setf html   " .kit = html
-
-" ==================== LINTING  ====================
-
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-"
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_javascript_checkers = ['eslint']
-
-" ================== JSX STUFFS  =================== 
-
-" Always use a jsx filetype
-let g:jsx_ext_required = 0
-" Enable html and css syntax highlighting in JavaScript
-let g:javascript_enable_domhtmlcss = 1
-
-
-
-" ==================== PLUGINS ==================
-
-"Closetag
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.jsx,*.kit,*.cshtml,*.ascx"
-
-" Override command to use fzf Files command instead
-let g:ctrlp_cmd = 'Files'
-
-" FZF colorizing
-"let g:fzf_colors =
-  \ { 'fg':      ['fg', 'Normal'],
-    \ 'bg':      ['bg', 'Normal'],
-    \ 'hl':      ['fg', 'Comment'],
-    \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-    \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-    \ 'hl+':     ['fg', 'Statement'],
-    \ 'info':    ['fg', 'PreProc'],
-    \ 'prompt':  ['fg', 'Conditional'],
-    \ 'pointer': ['fg', 'Exception'],
-    \ 'marker':  ['fg', 'Keyword'],
-    \ 'spinner': ['fg', 'Label'],
-    \ 'header':  ['fg', 'Comment'] }
 
