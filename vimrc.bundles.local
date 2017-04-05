@@ -11,3 +11,4 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'djoshea/vim-autoread'
 Plug 'SirVer/ultisnips'
+Plug 'chriskempson/base16-vim'
