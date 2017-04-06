@@ -36,11 +36,8 @@
       "haml"
     ]
   "linter-ui-default": {}
-  "sync-settings":
-    _lastBackupHash: "00296161e7bbc90f25ccc87292182bcf93f15882"
-    gistDescription: "Sync Settings, foo!"
-    gistId: "cd4305d29efa6b167d39f976df3d6d44"
-    personalAccessToken: "6c581e9a865136df111ceb3f21e4d5a822c958e7"
+  "package-sync":
+    createOnChange: true
   tabs:
     usePreviewTabs: true
   "tree-view":
