@@ -35,7 +35,8 @@
       "md"
       "haml"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "package-sync":
     createOnChange: true
   tabs:
