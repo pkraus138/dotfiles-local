@@ -1,3 +1,5 @@
+UnPlug 'syntastic'
+
 Plug 'scrooloose/nerdtree'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
@@ -14,3 +16,6 @@ Plug 'SirVer/ultisnips'
 Plug 'chriskempson/base16-vim'
 Plug 'lambdatoast/elm.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
