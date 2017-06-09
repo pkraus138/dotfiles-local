@@ -1,6 +1,6 @@
 " ================ Key Bindings ======================
 
-map <C-n> :NERDTreeToggle<CR>   " Toggle NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>   " Toggle NERDTree
 vnoremap <C-c> "*y"             " ctrl+c to sys clipboard
 
 " Pastetoggle
