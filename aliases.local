@@ -18,6 +18,7 @@ alias m="bundle exec rake db:migrate db:test:prepare"
 alias plugins="vim ~/.vimrc.bundles.local"
 alias rake="bundle exec rake"
 alias reload!="source ~/.zshrc"
+alias restart-postgres='rm /usr/local/var/postgres/postmaster.pid'
 alias rspec="bundle exec rspec"
 alias t="bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
 alias vimrc="vim ~/.vimrc.local"
