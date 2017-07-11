@@ -15,3 +15,7 @@ nnoremap <leader>i mzgg=G`z
 
 " Quick mapping to clear the highlighting of the previous search pattern matches
 nnoremap <leader>h :nohlsearch<cr>
+
+" Remap j and k to work on wrapping lines
+nnoremap k gk
+nnoremap j gj
