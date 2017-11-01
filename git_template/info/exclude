@@ -1,0 +1,7 @@
+.rspec-local
+.ruby-version
+.tool-versions
+.vim-github-dashboard
+/node_modules
+downloaded_settings.py
+vendor/bundle/
