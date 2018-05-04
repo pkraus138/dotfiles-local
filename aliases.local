@@ -27,3 +27,6 @@ alias t='bundle exec rspec spec && bundle exec bundle-audit update && bundle exe
 alias vimrc='vim ~/.vimrc.local'
 alias weather='curl -4 wttr.in/clearwater'
 alias zshrc='vim ~/.zshrc.local'
+
+alias core-link='wml add ../vector-go-core node_modules/vector-go-core/'
+alias core-unlink='wml rm 0'
