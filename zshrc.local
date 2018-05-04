@@ -63,4 +63,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME='/Users/peterkraus/Library/Android/sdk'
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
