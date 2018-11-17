@@ -2,3 +2,4 @@
 /node_modules
 .ruby-version
 .vim-github-dashboard
+.project
