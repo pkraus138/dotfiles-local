@@ -1,5 +1,6 @@
-/vendor/bundle
 /node_modules
 .ruby-version
 .vim-github-dashboard
 .project
+*.DS_Store
+.DS_Store
