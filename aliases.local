@@ -11,6 +11,7 @@ alias build-android='cd android && ./gradlew assembleRelease'
 alias cls='clear'
 alias co='checkout'
 alias creds='EDITOR=vi bin/rails credentials:edit'
+alias creds2="EDITOR='code --wait' rails credentials:edit"
 alias fuck!='rm -rf node_modules && yarn'
 alias hosts='sudo vim /private/etc/hosts'
 alias hiddenshow='defaults write com.apple.finder AppleShowAllFiles YES'
