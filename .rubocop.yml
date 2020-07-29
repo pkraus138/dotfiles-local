@@ -654,12 +654,3 @@ Rails/Validation:
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
