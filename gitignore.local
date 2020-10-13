@@ -1,4 +1,6 @@
 /node_modules
+/.vscode/
+.vscode/settings.json
 .ruby-version
 .vim-github-dashboard
 .project

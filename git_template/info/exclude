@@ -5,3 +5,4 @@
 /node_modules
 downloaded_settings.py
 vendor/bundle/
+.vscode
