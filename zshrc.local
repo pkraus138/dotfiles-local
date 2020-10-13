@@ -5,7 +5,7 @@ eval "$(rbenv init -)"
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH:$PATH"
 CASE_SENSITIVE="false"
 
@@ -67,3 +67,6 @@ export ANDROID_HOME='/Users/peterkraus/Library/Android/sdk'
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH=${HOME}/go/bin:$PATH
+export PATH="/usr/local/opt/node@10/bin:$PATH"
+export AWS_VAULT_BACKEND="keychain"
