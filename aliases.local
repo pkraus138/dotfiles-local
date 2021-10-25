@@ -1,41 +1,61 @@
-# aliases
+# General
+alias aliases="vim ~/.aliases.local"
+alias ag="Ag"
+alias c="clear"
+alias cls="clear"
+alias d="cd ~/dotfiles"
+alias dl="cd ~/dotfiles-local"
+alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
+alias hosts="sudo vim /private/etc/hosts"
+alias hiddenshow="defaults write com.apple.finder AppleShowAllFiles YES"
+alias hiddenhide="defaults write com.apple.finder AppleShowAllFiles NO"
+alias ll="ls -lahG"
+alias reload!="source ~/.zshrc"
+alias vimrc="vim ~/.vimrc.local"
+alias zshrc="vim ~/.zshrc.local"
 
-alias c='clear'
-alias d='cd ~/dotfiles'
-alias dl='cd ~/dotfiles-local'
+# Vim
+alias plugins="vim ~/.vimrc.bundles.local"
 
-alias aliases='vim ~/.aliases.local'
-alias audit='bundle exec bundle-audit update && bundle exec bundle-audit check'
-alias be='bundle exec'
-alias build-android='cd android && ./gradlew assembleRelease'
-alias cls='clear'
-alias co='checkout'
-alias creds='EDITOR=vi bin/rails credentials:edit'
+# Git
+alias co="checkout"
+
+# react native
+alias core-link="wml add ../vector-go-core node_modules/vector-go-core/"
+alias core-unlink="wml rm 0"
+alias fuck!="rm -rf node_modules && yarn"
+alias build-android="cd android && ./gradlew assembleRelease"
+
+# Rails
+alias audit="bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias be="bundle exec"
+alias creds="EDITOR=vi bin/rails credentials:edit"
 alias creds2="EDITOR='code --wait' rails credentials:edit"
-alias dcrw="docker-compose run web"
-alias dm="docker-compose run web rails db:migrate"
-alias drails="docker-compose run web rails"
-alias drake="docker-compose run web rake"
-alias drspec="docker-compose run -e 'RAILS_ENV=test' web bundle exec rspec"
-alias dt="docker-compose run -e 'RAILS_ENV=test' web bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
-alias dup="docker-compose up"
-alias fuck!='rm -rf node_modules && yarn'
-alias hosts='sudo vim /private/etc/hosts'
-alias hiddenshow='defaults write com.apple.finder AppleShowAllFiles YES'
-alias hiddenhide='defaults write com.apple.finder AppleShowAllFiles NO'
-alias ll='ls -lahG'
-alias m='bundle exec rake db:migrate db:test:prepare'
-alias pg-restart='rm /usr/local/var/postgres/postmaster.pid'
-alias pg-start='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-alias pg-stop='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
-alias plugins='vim ~/.vimrc.bundles.local'
-alias rake='bundle exec rake'
-alias reload!='source ~/.zshrc'
-alias rspec='bundle exec rspec'
-alias t='bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check'
-alias vimrc='vim ~/.vimrc.local'
-alias weather='curl -4 wttr.in/clearwater'
-alias zshrc='vim ~/.zshrc.local'
+alias m="bundle exec rake db:migrate db:test:prepare"
+alias pg-restart="rm /usr/local/var/postgres/postmaster.pid"
+alias pg-start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-update="brew postgresql-upgrade-database"
+alias rake="bundle exec rake"
+alias rspec="bundle exec rspec"
+alias t="bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
 
-alias core-link='wml add ../vector-go-core node_modules/vector-go-core/'
-alias core-unlink='wml rm 0'
+# Docker
+alias dbash="docker-compose exec web sh"
+alias dcrw="docker-compose run web"
+alias ddown="docker-compose down"
+alias dm="docker-compose run web rails db:migrate"
+alias drails="docker-compose exec web rails"
+alias drake="docker-compose exec web rake"
+alias drspec="docker-compose run -e 'RAILS_ENV=test' web bundle exec rspec"
+# alias dt="docker-compose run -e 'RAILS_ENV=test' web bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias dt="docker-compose run -e 'RAILS_ENV=test' web rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias dup="docker-compose up"
+
+# Rando
+alias weather="curl -4 wttr.in/dunedin"
+
+# AWS Vault
+alias vrails="aws-vault exec kp20-dev-admin -- rails"
+alias vsidekiq="aws-vault exec kp20-dev-admin -- bundle exec sidekiq"
+
