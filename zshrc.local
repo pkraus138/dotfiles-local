@@ -60,9 +60,6 @@ compinit
 setopt completeinword
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# aliases
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export ANDROID_HOME='/Users/peterkraus/Library/Android/sdk'
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
@@ -70,3 +67,10 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH=${HOME}/go/bin:$PATH
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export AWS_VAULT_BACKEND="keychain"
+export NVM_DIR="$HOME/.nvm"
+
+# aliases
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
