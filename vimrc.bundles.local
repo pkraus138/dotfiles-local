@@ -9,8 +9,8 @@ Plug 'rking/ag.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'townk/vim-autoclose'
 Plug 'alvan/vim-closetag'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
 Plug 'djoshea/vim-autoread'
 Plug 'chriskempson/base16-vim'
 Plug 'lambdatoast/elm.vim'
@@ -19,6 +19,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'shmargum/vim-sass-colors'
+" Plug 'gosukiwi/vim-atom-dark'
+Plug 'tomasiser/vim-code-dark'
