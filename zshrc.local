@@ -1,7 +1,7 @@
 export PATH="$HOME/.bin:$PATH"
 export EDITOR="/usr/local/bin/nvim"
 export MYLOCALVIMRC="$HOME/dotfiles-local/vimrc.local"
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
@@ -67,10 +67,11 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH=${HOME}/go/bin:$PATH
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export AWS_VAULT_BACKEND="keychain"
-export NVM_DIR="$HOME/.nvm"
+# export NVM_DIR="$HOME/.nvm"
 
 # aliases
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
