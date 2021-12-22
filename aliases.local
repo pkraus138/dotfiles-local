@@ -16,9 +16,11 @@ alias zshrc="vim ~/.zshrc.local"
 
 # Vim
 alias plugins="vim ~/.vimrc.bundles.local"
+alias v="nvim"
 
 # Git
 alias co="checkout"
+alias got="git"
 
 # react native
 alias core-link="wml add ../vector-go-core node_modules/vector-go-core/"
