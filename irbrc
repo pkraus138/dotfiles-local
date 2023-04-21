@@ -74,3 +74,4 @@ class Object
     IO.write("|pbcopy", text)
   end
 end
+IRB.conf[:USE_AUTOCOMPLETE] = false
