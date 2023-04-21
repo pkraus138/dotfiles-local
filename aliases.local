@@ -2,7 +2,6 @@
 alias aliases="vim ~/.aliases.local"
 alias ag="Ag"
 alias c="clear"
-alias cat="bat"
 alias cls="clear"
 alias d="cd ~/dotfiles"
 alias dl="cd ~/dotfiles-local"
