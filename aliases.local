@@ -22,7 +22,7 @@ alias v="nvim"
 alias co="checkout"
 alias got="git"
 
-# react native
+# React Native
 alias core-link="wml add ../vector-go-core node_modules/vector-go-core/"
 alias core-unlink="wml rm 0"
 alias fuck!="rm -rf node_modules && yarn"
@@ -43,6 +43,7 @@ alias rake="bundle exec rake"
 alias rials="rails"
 alias run="./bin/dev"
 alias t="bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
+alias tt="./bin/rspec-parallel"
 
 # Docker
 alias dbash="docker-compose exec web sh"
