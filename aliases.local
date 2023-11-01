@@ -70,7 +70,10 @@ alias ssh-oam-prod="aws-vault exec oam-production -- kpconnect"
 alias ssh-kp20-staging="aws-vault exec kp20-staging -- kpconnect"
 alias ssh-kp20-prod="aws-vault exec kp20-production -- kpconnect"
 alias ssh-sso-staging="aws-vault exec sso-staging -- kpconnect"
+alias ssh-sso-pentest="aws-vault exec sso-pentest -- kpconnect"
 alias ssh-sso-prod="aws-vault exec sso-production -- kpconnect"
+
+# What ae these for?
 alias vrails="aws-vault exec kp20-dev-admin -- rails"
 alias vsidekiq="aws-vault exec kp20-dev-admin -- bundle exec sidekiq"
 
