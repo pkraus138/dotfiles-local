@@ -15,6 +15,9 @@ alias reload!="source ~/.zshrc"
 alias vimrc="vim ~/.vimrc.local"
 alias zshrc="vim ~/.zshrc.local"
 
+# ASDF
+alias update-ruby="asdf plugin update ruby"
+
 # Vim
 alias plugins="vim ~/.vimrc.bundles.local"
 alias v="nvim"
@@ -45,6 +48,7 @@ alias rials="rails"
 alias run="./bin/dev"
 alias t="bundle exec rspec spec && bundle exec bundle-audit update && bundle exec bundle-audit check"
 alias tt="./bin/rspec-parallel"
+alias turbo="bundle exec turbo_tests -n8"
 
 # Docker
 alias dbash="docker-compose exec web sh"

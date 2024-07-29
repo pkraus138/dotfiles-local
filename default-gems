@@ -2,3 +2,4 @@ bundler
 foreman
 rails
 standardrb
+ruby-lsp
